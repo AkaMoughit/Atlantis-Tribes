@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    background: linear-gradient(to right,rgb(91,193,212), rgb(55,150,179));
+}
+
+.slide-container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img {
+    position: relative;
+    width: 470px;
+    height: 670px;
+    transition: .5s;
+}
+
+.button {
+    position: absolute;
+    width: 470px;
+    height: 670px;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#slider-span1:target~.image-slider #img1,
+#sliderspan1:target~.image-slider #button-1 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span2:target~.image-slider #img2,
+#sliderspan2:target~.image-slider #button-2 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span3:target~.image-slider #img3,
+#sliderspan3:target~.image-slider #button-3 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span4:target~.image-slider #img4,
+#sliderspan4:target~.image-slider #button-4 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span5:target~.image-slider #img5,
+#sliderspan5:target~.image-slider #button-5 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span6:target~.image-slider #img6,
+#sliderspan6:target~.image-slider #button-6 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider-span7:target~.image-slider #img7,
+#sliderspan7:target~.image-slider #button-7 {
+    width: 300px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+/*image position */
+#slider-span1:target ~ .image-slider {
+    left: 70%;
+}
+#slider-span2:target ~ .image-slider {
+    left: 50%;
+}
+#slider-span3:target ~ .image-slider {
+    left: 25%;
+}
+/* #slider-span4:target ~ .image-slider {
+    left: 70%;
+} */
+#slider-span5:target ~ .image-slider {
+    left: -25%;
+}
+#slider-span6:target ~ .image-slider {
+    left: -50%;
+}
+#slider-span7:target ~ .image-slider {
+    left: -70%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mint-counter {
+    color: wheat;
+}
